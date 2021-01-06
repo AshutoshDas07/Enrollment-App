@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "34459073125",
+    "project_id": "enrollment-app-96991",
+    "storage_bucket": "enrollment-app-96991.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34459073125:android:fedfbecdccffd579e3e48c",
+        "android_client_info": {
+          "package_name": "com.example.enrollmentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34459073125-mo90gs0ghhlhsve2mvaflcvrv78b93r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enrollmentapp",
+            "certificate_hash": "ba45a50ee065a60e6c40dd2e32ee5e18ed94635b"
+          }
+        },
+        {
+          "client_id": "34459073125-3gn4pnd7j6eud0ta4c0h9d4culrgi4ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_EfujDvnAYOVJzEnPXpionJYz5VLL9xE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34459073125-3gn4pnd7j6eud0ta4c0h9d4culrgi4ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
