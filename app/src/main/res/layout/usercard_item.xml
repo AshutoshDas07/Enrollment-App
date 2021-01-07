@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView android:id="@+id/cardview"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="70dp"
     app:cardCornerRadius="5dp"
     app:cardElevation="5dp"
     android:layout_margin="5dp"
@@ -15,7 +15,9 @@
         <ImageView
             android:id="@+id/user_pic"
             android:layout_width="100dp"
-            android:layout_height="match_parent">
+            android:padding="40dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_baseline_android_24">
         </ImageView>
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +30,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="top"
                 android:padding="10dp"
-                android:text="Hii"
                 android:textColor="#FFFFFF" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,15 +40,17 @@
                     android:id="@+id/user_gender"
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
+                    android:gravity="bottom"
                     android:padding="10dp"
                     android:textColor="#FFFFFF"
-                    android:gravity="bottom"/>
+                    android:textSize="10dp" />
 
                 <TextView
                     android:id="@+id/user_age"
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
                     android:padding="10dp"
+                    android:textSize="10dp"
                     android:textColor="#FFFFFF"
                     android:gravity="bottom"/>
 
@@ -57,13 +60,14 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:textColor="#FFFFFF"
+                    android:textSize="10dp"
                     android:gravity="bottom" />
 
                 <Button
                     android:id="@+id/delete_button"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/ic_baseline_delete_24"></Button>
             </LinearLayout>
     </LinearLayout>

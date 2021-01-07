@@ -1,10 +1,10 @@
 package com.example.enrollmentapp;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,6 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
     private ArrayList<UserDetails> listData;
@@ -33,11 +34,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-        final Object o=listData.get(position);
+        int year=Calendar.getInstance().get(Calendar.YEAR);
+        final UserDetails o=listData.get(position);
+        int dobyear=Integer.parseInt(o.getDob().substring(o.getDob().length()-4,o.getDob().length()));
+        int curr_age=year-dobyear;
         holder.name.setText(((UserDetails) o).getFirst_name()+" "+((UserDetails) o).getLast_name());
         holder.gender.setText(((UserDetails) o).getGender());
         holder.place.setText(((UserDetails) o).getState());
-        holder.age.setText(((UserDetails) o).getDob());
+        holder.age.setText(curr_age+" ");
         holder.delete_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

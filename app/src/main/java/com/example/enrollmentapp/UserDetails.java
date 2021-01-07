@@ -10,7 +10,15 @@ public class UserDetails {
     String phone_number;
     String state;
     String telephone_number;
+    String timestamp;
 
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
 
     public void setFirst_name(String first_name) {
         this.first_name = first_name;

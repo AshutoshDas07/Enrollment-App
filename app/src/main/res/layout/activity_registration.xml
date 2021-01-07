@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="vertical"
     android:background="#121212">
 <LinearLayout
@@ -10,14 +10,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    app:strokeColor="#FFFFFF"
+    app:strokeWidth="1.5dp"
+    app:cardCornerRadius="10dp">
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp">
+        android:background="@drawable/ic_baseline_android_24">
     </ImageView>
-
+</com.google.android.material.card.MaterialCardView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +46,7 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="First Name"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
@@ -54,7 +61,7 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="Last Name"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
@@ -69,7 +76,7 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="Date of Birth"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
@@ -85,7 +92,7 @@
         android:paddingLeft="10dp"
         android:hint="Gender"
         android:maxLength="30"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF">
     </EditText>
 
@@ -99,7 +106,7 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="Country"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
@@ -114,7 +121,7 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="State"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF">
     </EditText>
 
@@ -128,14 +135,14 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="Home Town"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
 
     <EditText
         android:id="@+id/phone_number"
-        android:inputType="text"
+        android:inputType="phone"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
@@ -143,14 +150,14 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="Phone Number"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
 
     <EditText
         android:id="@+id/telephone_number"
-        android:inputType="text"
+        android:inputType="phone"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
@@ -158,7 +165,7 @@
         android:background="@drawable/editbox_shape"
         android:paddingLeft="10dp"
         android:hint="Telehphone Number"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#C3C1C1"
         android:textColor="#FFFFFF"
         android:maxLength="30">
     </EditText>
